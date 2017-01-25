@@ -1,0 +1,6 @@
+.env
+.swa
+.swp
+.localized
+.DS_Store
+*.log
