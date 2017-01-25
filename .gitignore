@@ -4,3 +4,5 @@
 .localized
 .DS_Store
 *.log
+*.plist
+*.sh
