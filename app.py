@@ -9,7 +9,7 @@ from dotenv import find_dotenv
 # load ENVIRONMENT VARIABLES from .env
 load_dotenv(find_dotenv())
 username = os.environ.get("B593_USER")
-password = os.environ.get("B593_PASS")
+password = os.environ.get("B593_PASSWD")
 ip_address = os.environ.get("B593_IP_ADDRESS")
 pushover_token = os.environ.get("PUSHOVER_TOKEN")
 pushover_user = os.environ.get("PUSHOVER_USER")
