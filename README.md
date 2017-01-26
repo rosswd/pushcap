@@ -39,7 +39,7 @@ You need two things to automate the notifications:
 2. A launchd plist file that calls your shell script
 
 ### 1. bash shell script
-Find the path to the virtualenv environment you created above. You’re looking for the path to your python executable for that environment. Mine is ~/Envs/pcap/bin/python3.6~ *pcap* is my environment.
+Find the path to the virtualenv environment you created above. You’re looking for the path to your python executable for that environment. Mine is `~/Envs/pcap/bin/python3.6` *pcap* is my environment.
 
 Create a bash script (*script.sh*) like so:
 ```
@@ -48,9 +48,11 @@ $HOME/Envs/pcap/bin/python3.6 $HOME/Sites/python/pushcap/app.py
 ```
 
 Make your script executable:
+
 `chmod +x script.sh`
 
 Test your script manually:
+
 `./script.sh`
 
 ### 2. launchd plist file
@@ -63,6 +65,7 @@ To manage the loading and unloading of plist files you can use *launchctl*:
 + `launchctl list | grep 'me'`
 
 We will use 6 parameters or keys in our plist file:
+
 1. Label
 2. Program
 3. RunAtLoad
