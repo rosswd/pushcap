@@ -73,7 +73,7 @@ We will use 6 parameters or keys in our plist file:
 3. RunAtLoad
 4. StandardErrorPath
 5. StandardOutPath
-6. StartInterval
+6. StartCalendarInterval
 
 Copy one of the files in `~/Library/LaunchAgents` - the `com.google.keystone.agent.plist` for example. Remove everything *inside* the `<dict>` tag and save the file as `com.me.pushcap.plist`
 
@@ -89,14 +89,18 @@ Add the following inside the `<dict>` tag block:
 <string>/tmp/pushcap.err</string>
 <key>StandardOutPath</key>
 <string>/tmp/pushcap.out</string>
-<key>StartInterval</key>
-<integer>300</integer>
+<key>StartCalendarInterval</key>
+<dict>
+    <key>Hour</key>
+    <integer>21</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+</dict>
 ```
-You can change the *StartInterval* later but right now it will execute the script every 5 minutes.
 
 Load the plist file with *launchctl* and check that it returns a `0` when you list the process:
 
 + `launchctl load com.me.pushcap.plist`
 + `launchctl list | grep 'me'`
 
-Once you’ve verified it works go back and change the *StartInterval* to whatever suits you better. The value for 24 hours is `86400`
+Verify that you are receiving push notifications from Pushover.
