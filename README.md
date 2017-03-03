@@ -105,4 +105,4 @@ Load the plist file with *launchctl* and check that it returns a `0` when you li
 
 Verify that you are receiving push notifications from Pushover.
 
-If you find launchd hard to use, [lunchy](https://github.com/eddiezane/lunchy) make running launchd commands a lot simpler.
+If you find launchd hard to use, [lunchy](https://github.com/eddiezane/lunchy) makes running launchd commands a lot simpler.
