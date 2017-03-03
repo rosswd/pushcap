@@ -5,7 +5,7 @@ I use an unlocked *Huawei B593s-22* 4G/LTE Router to get my Internet access. Sel
 
 ![pushcap ios screen](https://www.dropbox.com/s/9ayhsm5r91z88fs/pushcap-ios.png?dl=1)
 
-If you going to use this yourself, know that I did no security testing. Your username and password could be sniffed over wifi I guess. See below for setup instructions.
+If you're going to use this yourself, know that I did no security testing. Your username and password could be sniffed over wifi I guess. See below for setup instructions.
 
 This is for Mac OS X only.
 
