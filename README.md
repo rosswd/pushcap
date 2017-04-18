@@ -20,7 +20,7 @@ I assume you have python, virtualenv, virtualenvwrapper, pip and the Chrome Brow
   + Python 3
     + `pip install -r requirements.txt`
   + Python 2
-    + `pip install requests dotenv`
+    + `pip install requests python-dotenv`
     + `pip install selenium`
 + Create a new app on [https://pushover.net/](pushover.net) and note your user and app keys
 + Create a *.env* file with **unquoted** Environment Variables for
