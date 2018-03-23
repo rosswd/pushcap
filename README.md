@@ -3,7 +3,7 @@ After my broadband provider decided to actually enforce its download cap and too
 
 I use an unlocked *Huawei B593s-22* 4G/LTE Router to get my Internet access. Selenium and Chromedriver log me into the Router locally and grab my data usage, then send me a push notification. It does this once a day. I use Launchd and [https://pushover.net/](pushover.net) to automate the process. 
 
-![pushcap ios screen](https://www.dropbox.com/s/9ayhsm5r91z88fs/pushcap-ios.png?dl=1)
+![pushcap ios screen](img/pushcap-ios.png)
 
 If you're going to use this yourself, know that I did no security testing. Your username and password could be sniffed over wifi I guess. See below for setup instructions.
 
